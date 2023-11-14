@@ -1,0 +1,138 @@
+/*
+Basic styles
+==================================================
+Contains the imports to all basic styles.
+
+The file organization follows the 7-1 pattern architecture
+https://sass-guidelin.es/#the-7-1-pattern
+*/
+
+/*
+ * Variables, Mixins, Functions
+ * ---------------------------- */
+@import 'variables';
+@import 'src/scss/abstract/mixins/truncate-multiline'; // used in product-box
+@import 'src/scss/abstract/functions/feature';
+
+/*
+ * Skin
+ * ---------- */
+@import "skin/shopware/_base";
+
+/*
+ * Vendors
+ * ------- */
+@import 'vendor/bootstrap_product'; // (200.59 kb, all features)
+@import 'vendor/tiny-slider'; // (1.67 kb)
+@import 'vendor/datepicker'; // (13.22 kb)
+
+/*
+ * Base stuff
+ * ---------- */
+//@import 'src/scss/base/base'; // (0.75 kb)
+//@import 'src/scss/base/reboot'; // (0.37 kb)
+
+/*
+ * Components
+ * ---------- */
+@import 'src/scss/component/alert'; // (0.15 kb)
+@import 'src/scss/component/card'; // (0.25 kb)
+@import 'src/scss/component/category-navigation'; // (0.60 kb)
+@import 'src/scss/component/backdrop'; // (0.31 kb)
+@import 'src/scss/component/base-slider'; // (2.79 kb)
+@import 'src/scss/component/image-slider';  // (1.03 kb)
+@import 'src/scss/component/product-slider'; // (0.52 kb)
+@import 'src/scss/component/gallery-slider'; // (4.33 kb)
+@import 'src/scss/component/magnifier';  // (0.44 kb)
+@import 'src/scss/component/zoom-modal';  // (1.42 kb)
+@import 'src/scss/component/offcanvas'; // (0.50 kb)
+@import 'src/scss/component/product-box'; // (depends on truncate-multiline, 3,29 kb)
+@import 'src/scss/component/loader'; // (0.50 kb)
+@import 'src/scss/component/modal'; // (0.48 kb)
+@import 'src/scss/component/flags'; // (1.11 kb)
+@import 'src/scss/component/icon'; // (2.64 kb)
+@import 'src/scss/component/pagination'; // (0.08 kb)
+@import 'src/scss/component/cms-sections'; // (0.50 kb)
+@import 'src/scss/component/cms-block'; // (2.46 kb)
+@import 'src/scss/component/cms-element'; // (3.38 kb)
+@import 'src/scss/component/cms-form-confirmation'; // (0.22 kb)
+@import 'src/scss/component/forms'; // (0.61 kb)
+@import 'src/scss/component/address-editor'; // (0.50 kb)
+@import 'src/scss/component/sorting';  // (0.04 kb)
+@import 'src/scss/component/delivery-status';  // (0.17 kb)
+@import 'src/scss/component/quickview-modal'; // (0.50 kb)
+@import 'src/scss/component/payment-method'; // (0.15 kb)
+@import 'src/scss/component/shipping-method'; // (0.15 kb)
+@import 'src/scss/component/filter-panel'; // (3.74 kb)
+@import 'src/scss/component/filter-multi-select'; // (0.45 kb)
+@import 'src/scss/component/filter-property-select'; // (1.23 kb)
+@import 'src/scss/component/filter-boolean'; // (0.51 kb)
+@import 'src/scss/component/filter-range'; // (1.11 kb)
+@import 'src/scss/component/filter-rating-select'; // (1.64 kb)
+/** @deprecated tag:v6.6.0 - File "_ellipsis.src/scss" will be removed without replacement. Corresponding JS-Plugin "ellipsis.plugin.js" is not used anymore. */
+@import 'src/scss/component/ellipsis'; // (0.07 kb)
+@import 'src/scss/component/product-feature'; // (0.14 kb)
+@import 'src/scss/component/notification-dot'; // (0.64 kb)
+@import 'src/scss/component/product-wishlist'; // (2.28 kb)
+@import 'src/scss/component/quantity-selector'; // (0.66 kb)
+/** @deprecated tag:v6.6.0 - File "_fading-plugin.src/scss" will be removed without replacement. Corresponding JS-Plugin "fading.plugin.js" is not used anymore. */
+@import 'src/scss/component/fading-plugin'; // (0.39 kb)
+@import 'src/scss/component/basic-captcha'; // (0.64 kb)
+//@import 'src/scss/component/line-item'; // (11.26 kb)
+@import 'src/scss/component/visibility'; // (0.19 kb)
+
+/*
+ * Layout-related sections
+ * ----------------------- */
+@import 'src/scss/layout/container'; // (0.11 kb)
+@import 'src/scss/layout/top-bar'; // (0.45 kb)
+@import 'src/scss/layout/header'; // (0.81 kb)
+@import 'src/scss/layout/header-minimal'; // (0.73 kb)
+@import 'src/scss/layout/footer'; // (1.16 kb)
+@import 'src/scss/layout/main-navigation'; // (0.09 kb)
+@import 'src/scss/layout/navigation-flyout'; // (0.59 kb)
+@import 'src/scss/layout/navigation-offcanvas'; // (0.50 kb)
+@import 'src/scss/layout/offcanvas-cart'; // (2.03 kb)
+@import 'src/scss/layout/account-menu';  // (0.79 kb)
+@import 'src/scss/layout/search-suggest'; // (1.33 kb)
+@import 'src/scss/layout/cookie-permission'; // (0.41 kb)
+@import 'src/scss/layout/cookie-configuration'; // (1.34 kb)
+@import 'src/scss/layout/scroll-up'; // (0.26 kb)
+@import 'src/scss/layout/recaptcha'; // (0.13 kb)
+
+/*
+ * Page-specific styles
+ * -------------------- */
+@import 'src/scss/page/product-detail/product-detail'; // (1.34 kb)
+@import 'src/scss/page/product-detail/configurator'; // (1.98 kb)
+@import 'src/scss/page/product-detail/tabs'; // (0.43 kb)
+@import 'src/scss/page/product-detail/review'; // (1.74 kb)
+
+//@import 'src/scss/page/account/account'; // (0.47 kb)
+//@import 'src/scss/page/account/aside'; // (0.27 kb)
+//@import 'src/scss/page/account/overview'; // (0.04 kb)
+//@import 'src/scss/page/account/register'; // (0.21 kb)
+//@import 'src/scss/page/account/login'; // (0.16 kb)
+//@import 'src/scss/page/account/address'; // (0.29 kb)
+//@import 'src/scss/page/account/profile'; // (0.10 kb)
+//@import 'src/scss/page/account/order'; // (4.48 kb)
+//@import 'src/scss/page/account/edit-order'; // (0.48 kb)
+//@import 'src/scss/page/account/order-detail'; // (3.59 kb)
+
+//@import 'src/scss/page/checkout/checkout'; // (0.28 kb)
+//@import 'src/scss/page/checkout/aside'; // (1.18 kb)
+///** @deprecated tag:v6.6.0 - File "_aside-children.src/scss" will be removed. The corresponding templates were removed in v6.5.0. Please build upon the CSS for "line-item" instead. */
+//@import 'src/scss/page/checkout/aside-children'; // (2.51 kb)
+//@import 'src/scss/page/checkout/cart'; // (0.48 kb)
+//@import 'src/scss/page/checkout/register'; // (0.49 kb)
+//@import 'src/scss/page/checkout/confirm'; // (0.49 kb)
+//@import 'src/scss/page/checkout/finish'; // (0.48 kb)
+
+@import 'src/scss/page/content/breadcrumb'; // (0.06 kb)
+
+@import 'src/scss/page/contact/contact'; // (0.07 kb)
+@import 'src/scss/page/newsletter/newsletter'; // (0.07 kb)
+
+@import 'src/scss/page/search/search'; // (0.12 kb)
+
+@import 'src/scss/page/wishlist/wishlist'; // (0.65 kb)

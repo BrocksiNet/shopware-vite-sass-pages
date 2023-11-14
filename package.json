@@ -1,0 +1,32 @@
+{
+  "name": "brocksinet-vite-sass-pages",
+  "version": "0.0.1",
+  "description": "Use Vite for building SCSS into CSS to optimize specific pages in Shopware 6",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "scss:build": "sass --no-source-map --load-path=../../../src/Storefront/Resources/app/storefront --style=compressed ./src/Resources/app/storefront/src/scss:./src/Resources/app/storefront/dist/storefront/css",
+    "scss:watch": "sass --watch --update --load-path=../../../src/Storefront/Resources/app/storefront --style=expanded ./src/Resources/app/storefront/src/scss:./src/Resources/app/storefront/dist/storefront/css",
+    "purge:css": ""
+  },
+  "keywords": [
+    "Vite",
+    "SCSS",
+    "CSS",
+    "Shopware"
+  ],
+  "author": "BrocksiNet",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@rollup/plugin-alias": "^5.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "browserslist": "^4.22.1",
+    "lightningcss": "^1.22.1",
+    "rollup-plugin-critical": "^1.0.12",
+    "sass": "^1.69.5",
+    "vite": "^4.5.0",
+    "vite-plugin-symfony": "^6.0.1"
+  }
+}

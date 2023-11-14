@@ -1,0 +1,137 @@
+/*
+Basic styles
+==================================================
+Contains the imports to all basic styles.
+
+The file organization follows the 7-1 pattern architecture
+https://sass-guidelin.es/#the-7-1-pattern
+*/
+
+/*
+ * Variables, Mixins, Functions
+ * ---------------------------- */
+@import 'variables';
+@import 'src/scss/abstract/mixins/truncate-multiline';
+@import 'src/scss/abstract/functions/feature';
+
+/*
+ * Skin variables
+ * ---------- */
+
+/*
+ * Vendors
+ * ------- */
+@import 'vendor/bootstrap';
+@import 'vendor/tiny-slider';
+@import 'vendor/datepicker';
+
+/*
+ * Base stuff
+ * ---------- */
+@import 'src/scss/base/base';
+@import 'src/scss/base/reboot';
+
+/*
+ * Components
+ * ---------- */
+@import 'src/scss/component/alert';
+@import 'src/scss/component/card';
+@import 'src/scss/component/category-navigation';
+@import 'src/scss/component/backdrop';
+@import 'src/scss/component/base-slider';
+@import 'src/scss/component/image-slider';
+@import 'src/scss/component/product-slider';
+@import 'src/scss/component/gallery-slider';
+@import 'src/scss/component/magnifier';
+@import 'src/scss/component/zoom-modal';
+@import 'src/scss/component/offcanvas';
+@import 'src/scss/component/product-box';
+@import 'src/scss/component/loader';
+@import 'src/scss/component/modal';
+@import 'src/scss/component/flags';
+@import 'src/scss/component/icon';
+@import 'src/scss/component/pagination';
+@import 'src/scss/component/cms-sections';
+@import 'src/scss/component/cms-block';
+@import 'src/scss/component/cms-element';
+@import 'src/scss/component/cms-form-confirmation';
+@import 'src/scss/component/forms';
+@import 'src/scss/component/address-editor';
+@import 'src/scss/component/sorting';
+@import 'src/scss/component/delivery-status';
+@import 'src/scss/component/quickview-modal';
+@import 'src/scss/component/payment-method';
+@import 'src/scss/component/shipping-method';
+@import 'src/scss/component/filter-panel';
+@import 'src/scss/component/filter-multi-select';
+@import 'src/scss/component/filter-property-select';
+@import 'src/scss/component/filter-boolean';
+@import 'src/scss/component/filter-range';
+@import 'src/scss/component/filter-rating-select';
+/** @deprecated tag:v6.6.0 - File "_ellipsis.scss" will be removed without replacement. Corresponding JS-Plugin "ellipsis.plugin.js" is not used anymore. */
+@import 'src/scss/component/ellipsis';
+@import 'src/scss/component/product-feature';
+@import 'src/scss/component/notification-dot';
+@import 'src/scss/component/product-wishlist';
+@import 'src/scss/component/quantity-selector';
+/** @deprecated tag:v6.6.0 - File "_fading-plugin.scss" will be removed without replacement. Corresponding JS-Plugin "fading.plugin.js" is not used anymore. */
+@import 'src/scss/component/fading-plugin';
+@import 'src/scss/component/basic-captcha';
+@import 'src/scss/component/line-item';
+@import 'src/scss/component/visibility';
+
+/*
+ * Layout-related sections
+ * ----------------------- */
+@import 'src/scss/layout/container';
+@import 'src/scss/layout/top-bar';
+@import 'src/scss/layout/header';
+@import 'src/scss/layout/header-minimal';
+@import 'src/scss/layout/footer';
+@import 'src/scss/layout/main-navigation';
+@import 'src/scss/layout/navigation-flyout';
+@import 'src/scss/layout/navigation-offcanvas';
+@import 'src/scss/layout/offcanvas-cart';
+@import 'src/scss/layout/account-menu';
+@import 'src/scss/layout/search-suggest';
+@import 'src/scss/layout/cookie-permission';
+@import 'src/scss/layout/cookie-configuration';
+@import 'src/scss/layout/scroll-up';
+@import 'src/scss/layout/recaptcha';
+
+/*
+ * Page-specific styles
+ * -------------------- */
+@import 'src/scss/page/product-detail/product-detail';
+@import 'src/scss/page/product-detail/configurator';
+@import 'src/scss/page/product-detail/tabs';
+@import 'src/scss/page/product-detail/review';
+
+@import 'src/scss/page/account/account';
+@import 'src/scss/page/account/aside';
+@import 'src/scss/page/account/overview';
+@import 'src/scss/page/account/register';
+@import 'src/scss/page/account/login';
+@import 'src/scss/page/account/address';
+@import 'src/scss/page/account/profile';
+@import 'src/scss/page/account/order';
+@import 'src/scss/page/account/edit-order';
+@import 'src/scss/page/account/order-detail';
+
+@import 'src/scss/page/checkout/checkout';
+@import 'src/scss/page/checkout/aside';
+/** @deprecated tag:v6.6.0 - File "_aside-children.scss" will be removed. The corresponding templates were removed in v6.5.0. Please build upon the CSS for "line-item" instead. */
+@import 'src/scss/page/checkout/aside-children';
+@import 'src/scss/page/checkout/cart';
+@import 'src/scss/page/checkout/register';
+@import 'src/scss/page/checkout/confirm';
+@import 'src/scss/page/checkout/finish';
+
+@import 'src/scss/page/content/breadcrumb';
+
+@import 'src/scss/page/contact/contact';
+@import 'src/scss/page/newsletter/newsletter';
+
+@import 'src/scss/page/search/search';
+
+@import 'src/scss/page/wishlist/wishlist';

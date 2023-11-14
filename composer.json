@@ -1,0 +1,44 @@
+{
+    "name": "brocksinet/vite-sass-pages",
+    "description": "Use Vite for building SCSS into CSS to optimize specific pages in Shopware 6",
+    "type": "shopware-platform-plugin",
+    "version": "0.0.1",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.*",
+        "pentatrion/vite-bundle": "^6.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "extra": {
+        "shopware-plugin-class": "BrocksiNet\\ViteSassPages",
+        "description": {
+            "de-DE": "Use Vite for building SCSS into CSS to optimize specific pages in Shopware 6",
+            "en-GB": "Use Vite for building SCSS into CSS to optimize specific pages in Shopware 6"
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.brocksi.net/",
+            "en-GB": "https://www.brocksi.net/"
+        },
+        "supportLink": {
+            "de-DE": "https://www.brocksi.net/",
+            "en-GB": "https://www.brocksi.net/"
+        },
+        "label": {
+            "de-DE": "powered by BrocksInet",
+            "en-GB": "powered by BrocksInet"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "BrocksiNet\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
+    }
+}

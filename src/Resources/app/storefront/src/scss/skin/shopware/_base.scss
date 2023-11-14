@@ -1,0 +1,75 @@
+/*
+Shopware skin
+==================================================
+Contains the imports to all Shopware skin styles.
+
+The file organization follows the 7-1 pattern architecture
+https://sass-guidelin.es/#the-7-1-pattern
+*/
+
+/*
+ * Vendors
+ * ------- */
+// @ToDo: This causes issues during build with vite because of @supports keyword not known
+//@import 'src/scss/skin/shopware/vendor/inter-fontface';
+
+/*
+ * Variables, Mixins, Functions
+ * ---------------------------- */
+
+/*
+ * Base stuff
+ * ---------- */
+@import 'src/scss/skin/shopware/base/base';
+@import 'src/scss/skin/shopware/base/typography';
+
+/*
+ * Components
+ * ---------- */
+@import 'src/scss/skin/shopware/component/alert';
+@import 'src/scss/skin/shopware/component/badge';
+@import 'src/scss/skin/shopware/component/breadcrumb';
+@import 'src/scss/skin/shopware/component/button';
+@import 'src/scss/skin/shopware/component/card';
+@import 'src/scss/skin/shopware/component/custom-select';
+@import 'src/scss/skin/shopware/component/form';
+@import 'src/scss/skin/shopware/component/modal';
+@import 'src/scss/skin/shopware/component/product-box';
+@import 'src/scss/skin/shopware/component/tab-menu';
+@import 'src/scss/skin/shopware/component/cms-block';
+@import 'src/scss/skin/shopware/component/cms-element';
+@import 'src/scss/skin/shopware/component/quickview-modal';
+@import 'src/scss/skin/shopware/component/pagination';
+
+/*
+ * Layout-related sections
+ * ----------------------- */
+@import 'src/scss/skin/shopware/layout/top-bar';
+@import 'src/scss/skin/shopware/layout/header';
+@import 'src/scss/skin/shopware/layout/footer';
+@import 'src/scss/skin/shopware/layout/main-navigation';
+@import 'src/scss/skin/shopware/layout/navigation-flyout';
+@import 'src/scss/skin/shopware/layout/navigation-offcanvas';
+@import 'src/scss/skin/shopware/layout/offcanvas-cart';
+@import 'src/scss/skin/shopware/layout/search-suggest';
+
+/*
+ * Page-specific styles
+ * -------------------- */
+@import 'src/scss/skin/shopware/page/product-detail/product-detail';
+@import 'src/scss/skin/shopware/page/product-detail/tabs';
+@import 'src/scss/skin/shopware/page/product-detail/review';
+@import 'src/scss/skin/shopware/page/product-detail/cross-selling';
+
+@import 'src/scss/skin/shopware/page/account/aside';
+@import 'src/scss/skin/shopware/page/account/register';
+@import 'src/scss/skin/shopware/page/account/address';
+@import 'src/scss/skin/shopware/page/account/profile';
+@import 'src/scss/skin/shopware/page/account/order';
+@import 'src/scss/skin/shopware/page/account/order-detail';
+
+@import 'src/scss/skin/shopware/page/checkout/aside';
+@import 'src/scss/skin/shopware/page/checkout/cart';
+
+@import 'src/scss/skin/shopware/page/contact/contact';
+@import 'src/scss/skin/shopware/page/newsletter/newsletter';

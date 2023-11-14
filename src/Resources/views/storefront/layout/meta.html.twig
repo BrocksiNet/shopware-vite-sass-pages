@@ -1,0 +1,46 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_hmr_mode %}
+    {{ vite_entry_script_tags('core_js') }}
+    {{ vite_entry_script_tags('custom_js') }}
+{% endblock %}
+
+{% block layout_head_stylesheet %}
+    {% set css = 'all' %}
+
+    {{ dump(controllerName|lower) }}
+    {{ dump(controllerAction|lower) }}
+    {% if (controllerName is not empty) and (controllerAction is not empty) %}
+        {% if (controllerName|lower == 'product') and (controllerAction|lower == 'index') %}
+            {% set css = 'product' %}
+        {% endif %}
+        {% if (controllerName|lower == 'navigation') and (controllerAction|lower == 'home') %}
+            {# set css = 'home' #}
+        {% endif %}
+        {% if (controllerName|lower == 'navigation') and (controllerAction|lower == 'index') %}
+            {# set css = 'listing' #}
+            {# index can be listing, cms page, landing page and so on hard to optimize #}
+        {% endif %}
+    {% endif %}
+
+    {% if (css is defined) and (css != 'all') %}
+        {% set tag_name = css ~ '_css'  %}
+        <link rel="stylesheet" href="{{ "/build/assets/critical/" ~ css ~ "_critical.min.css" }}"/>
+        {{ vite_entry_link_tags(tag_name, {
+            attr: {
+                rel: "preload",
+                as: "style",
+                onload: "this.onload=null;this.rel='stylesheet'"
+            }
+        }) }}
+        <noscript>{{ vite_entry_link_tags(tag_name, {
+                attr: {
+                    rel: "stylesheet"
+                }
+            }) }}</noscript>
+    {% endif %}
+
+    {% if (css is not defined) or (css == 'all') or (css is empty) %}
+        {{ vite_entry_link_tags('all_css') }}
+    {% endif %}
+{% endblock %}

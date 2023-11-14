@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([["vite-sass-pages"],{1762:()=>{console.log("Vite + Sass = 💙")}},s=>{var e;e=1762,s(s.s=e)}]);

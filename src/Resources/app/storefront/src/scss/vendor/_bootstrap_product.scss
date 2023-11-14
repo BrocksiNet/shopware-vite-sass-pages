@@ -1,0 +1,60 @@
+/*
+Bootstrap
+==================================================
+Import of Bootstrap vendor.
+
+https://getvendor/bootstrap.com/docs/5.2/getting-started/introduction
+*/
+
+@import "vendor/bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "vendor/bootstrap/scss/functions";
+@import "vendor/bootstrap/scss/variables";
+@import "vendor/bootstrap/scss/maps";
+@import "vendor/bootstrap/scss/mixins";
+@import "vendor/bootstrap/scss/utilities";
+
+// Layout & components
+@import "vendor/bootstrap/scss/root"; // (0.53 kb, 1.83 kb)
+@import "vendor/bootstrap/scss/reboot"; // (4.33 kb, 4.33 kb)
+@import "vendor/bootstrap/scss/type"; // (0.45 kb, 0.45 kb)
+@import "vendor/bootstrap/scss/images"; // (0.30 kb)
+@import "vendor/bootstrap/scss/containers"; // (0.23 kb)
+@import "vendor/bootstrap/scss/grid"; // (0.86 kb, 9.66 kb)
+//@import "vendor/bootstrap/scss/tables"; // (4.68 kb)
+@import "vendor/bootstrap/scss/forms"; // (25.63 kb)
+@import "vendor/bootstrap/scss/buttons"; // (10.70 kb)
+@import "vendor/bootstrap/scss/transitions"; // (0.45 kb)
+@import "vendor/bootstrap/scss/dropdown"; // (5.99 kb)
+@import "vendor/bootstrap/scss/button-group"; // (2.13 kb)
+@import "vendor/bootstrap/scss/nav"; // (2.88 kb)
+@import "vendor/bootstrap/scss/navbar"; // (9.14 kb)
+@import "vendor/bootstrap/scss/card"; // (4.13 kb)
+@import "vendor/bootstrap/scss/accordion"; // (4.45 kb)
+@import "vendor/bootstrap/scss/breadcrumb"; // (0.91 kb)
+@import "vendor/bootstrap/scss/pagination"; // (2.70 kb)
+@import "vendor/bootstrap/scss/badge"; // (0.53 kb)
+@import "vendor/bootstrap/scss/alert"; // (1.75 kb)
+@import "vendor/bootstrap/scss/progress"; // (1.19 kb)
+@import "vendor/bootstrap/scss/list-group"; // (9.59 kb)
+@import "vendor/bootstrap/scss/close"; // (0.77 kb)
+//@import "vendor/bootstrap/scss/toasts"; // (1.74 kb)
+@import "vendor/bootstrap/scss/modal"; // (5.63 kb)
+@import "vendor/bootstrap/scss/tooltip"; // (4.28 kb)
+@import "vendor/bootstrap/scss/popover"; // (7.37 kb)
+@import "vendor/bootstrap/scss/carousel"; // (3.59 kb)
+@import "vendor/bootstrap/scss/spinners"; // (1.17 kb)
+@import "vendor/bootstrap/scss/offcanvas"; // (10.78 kb)
+@import "vendor/bootstrap/scss/placeholders"; // (0.73 kb)
+
+// Helpers
+@import "vendor/bootstrap/scss/helpers"; // (3.59 kb)
+
+// Utilities
+@import "vendor/bootstrap/scss/utilities/api"; // (0.75 kb)
+// scss-docs-end import-stack
+
