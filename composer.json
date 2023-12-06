@@ -27,8 +27,8 @@
             "en-GB": "https://www.brocksi.net/"
         },
         "label": {
-            "de-DE": "powered by BrocksInet",
-            "en-GB": "powered by BrocksInet"
+            "de-DE": "powered by BrocksiNet",
+            "en-GB": "powered by BrocksiNet"
         }
     },
     "autoload": {
